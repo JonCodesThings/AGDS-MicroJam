@@ -14,7 +14,7 @@ if __name__ == "__main__":
     note = NoteManager()
     input_ = Input()
     screen = pygame.display.set_mode((800, 600))
-    pygame.display.set_caption("whitebear")
+    pygame.display.set_caption("character")
     clock.tick()
     while (True):
         screen.fill(pygame.Color(0, 0, 0))
