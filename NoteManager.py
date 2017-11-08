@@ -23,6 +23,10 @@ class NoteManager:
             if (not i.getAlive()):
                 i.x = -20
                 i.setChar(self.chars[random.randint(0,2)])
+                if (random.randint(0, 1) > 0):
+                    i.y = self.low_y
+                else:
+                    i.y = self.high_y
                 i.setAlive(True)
                 return None
 

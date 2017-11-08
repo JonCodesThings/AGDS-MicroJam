@@ -23,6 +23,9 @@ if __name__ == "__main__":
                 pygame.display.quit()
                 sys.exit()
         input_.update()
+        if (input_.getKeys()[K_ESC]):
+            pygame.display.quit()
+            sys.exit()
         character.update(clock.get_time(), input_)
         note.update(clock.get_time())
         character.render(screen)
